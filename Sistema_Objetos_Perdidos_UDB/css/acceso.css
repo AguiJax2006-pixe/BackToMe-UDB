@@ -516,3 +516,39 @@ body {
   outline-offset: 2px;
 }
 
+/* Mejoras para pantallas pequeñas */
+@media (max-width: 360px) {
+  .auth-layout {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .form-side {
+    padding: 16px 12px 24px;
+  }
+
+  .form-wrap {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .field-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-wrap h2 {
+    font-size: 22px;
+    overflow-wrap: break-word;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .password-field input {
+    min-width: 0;
+  }
+}
